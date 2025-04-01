@@ -1,0 +1,306 @@
+/* Общие стили */
+body {
+    font-family: 'Arial', sans-serif;
+    background: #1e1e2e;
+    color: #f0f0f0;
+    text-align: center;
+    margin: 20px;
+}
+
+/* Заголовок */
+header h1 {
+    color: #f8f8f8;
+    font-size: 24px;
+}
+
+/* Вкладки */
+.tabs-container {
+    max-width: 500px;
+    margin: 20px auto;
+    background: #282838;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    background: #33334a;
+    border-radius: 5px;
+}
+
+.tab-link {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-weight: bold;
+    color: #c0c0ff;
+    transition: color 0.3s;
+}
+
+.tab-link.active {
+    color: #fff;
+    border-bottom: 2px solid #c0c0ff;
+}
+
+.tab-content {
+    display: none;
+    padding: 15px;
+    background: #232332;
+    border-radius: 5px;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Попап */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #232332;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(192, 192, 255, 0.3);
+    width: 300px;
+}
+
+.popup-content {
+    position: relative;
+    color: #ddd;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #ff4d4d;
+}
+
+.btn {
+    background: #6363ff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #4a4aff;
+}
+
+/* Аккордеон */
+.accordion {
+    max-width: 400px;
+    margin: 20px auto;
+    background: #282838;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.accordion-item {
+    border-bottom: 1px solid #444;
+}
+
+.accordion-header {
+    width: 100%;
+    padding: 10px;
+    background: #33334a;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    font-weight: bold;
+    color: #c0c0ff;
+    transition: color 0.3s;
+}
+
+.accordion-header:hover {
+    color: #fff;
+}
+
+.accordion-content {
+    display: none;
+    padding: 10px;
+    background: #232332;
+    color: #c0c0ff;
+}
+
+/* Адаптивность */
+@media (max-width: 600px) {
+    .tabs {
+        flex-direction: column;
+    }
+    .tab-link {
+        font-size: 14px;
+    }
+    .popup {
+        width: 90%;
+    }
+}/* Общие стили */
+body {
+    font-family: 'Consolas', monospace;
+    background: #121212;
+    color: #0ff;
+    text-align: center;
+    margin: 20px;
+}
+
+/* Заголовок */
+header h1 {
+    color: #0ff;
+    text-shadow: 0px 0px 10px #0ff;
+}
+
+/* Вкладки */
+.tabs-container {
+    max-width: 500px;
+    margin: 20px auto;
+    background: #222;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px #0ff;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-between;
+    background: #333;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.tab-link {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    background: #444;
+    cursor: pointer;
+    font-weight: bold;
+    color: #0ff;
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+.tab-link.active {
+    background: #0ff;
+    color: #222;
+    box-shadow: 0px 0px 10px #0ff;
+}
+
+.tab-content {
+    display: none;
+    padding: 15px;
+    background: #1a1a1a;
+    border-radius: 5px;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Попап */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px #0ff;
+    z-index: 1000;
+    width: 300px;
+}
+
+.popup-content {
+    position: relative;
+    color: #0ff;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    color: red;
+}
+
+.btn {
+    background: #0ff;
+    color: #222;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 20px;
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+.btn:hover {
+    background: #00e6e6;
+    box-shadow: 0px 0px 10px #00e6e6;
+}
+
+/* Аккордеон */
+.accordion {
+    max-width: 400px;
+    margin: 20px auto;
+    background: #222;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px #0ff;
+}
+
+.accordion-item {
+    border-bottom: 1px solid #0ff;
+}
+
+.accordion-header {
+    width: 100%;
+    padding: 10px;
+    background: #333;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    font-weight: bold;
+    color: #0ff;
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+.accordion-header:hover {
+    background: #0ff;
+    color: #222;
+    box-shadow: 0px 0px 10px #0ff;
+}
+
+.accordion-content {
+    display: none;
+    padding: 10px;
+    background: #1a1a1a;
+    color: #0ff;
+}
+
+/* Адаптивность */
+@media (max-width: 600px) {
+    .tabs {
+        flex-direction: column;
+    }
+    .tab-link {
+        font-size: 14px;
+    }
+    .popup {
+        width: 90%;
+    }
+}
